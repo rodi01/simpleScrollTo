@@ -1,5 +1,5 @@
 /* --
-http://github.com/oncemade/simpleTabs
+http://github.com/rodi01/simpleScrollTo
 Simple ScrollTo for jQuery.
 Written by Rodrigo Soares (oncemade{at}gmail.com) Jul 2010.
 

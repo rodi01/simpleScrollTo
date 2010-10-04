@@ -1,4 +1,4 @@
-Simply Scroll To
+Simple ScrollTo
 ================
 
 More info coming soon.
