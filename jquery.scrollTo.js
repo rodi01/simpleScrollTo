@@ -1,5 +1,5 @@
 /* --
-http://github.com/oncemade/simpleTabs
+http://github.com/rodi01/simpleScrollTo
 Simple ScrollTo for jQuery.
 Written by Rodrigo Soares (oncemade{at}gmail.com) Jul 2010.
 
@@ -15,8 +15,12 @@ $.fn.scrollTo = function(options) {
 
 	return this.each(function() {
 		var $this = $(this),
-			destination = $this.offset().top;
-		$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination-opts.offsetBy}, opts.speed );
+			whereTo = $this.attr('href'),
+			destination = $(whereTo).offset().top;
+		$this.click(function() {
+			$('html:not(:animated),body:not(:animated)').animate({scrollTop: destination-opts.offsetBy}, opts.speed );
+			return false;
+		});
 	});
 };
 
